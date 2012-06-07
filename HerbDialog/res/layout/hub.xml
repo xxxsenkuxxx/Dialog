@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/pot1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="화분1"
+        android:textColor="#ff00ff" />
+        
+    <Button android:id="@+id/pot2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff000"
+        android:text="화분2"/>
+        
+    <Button android:id="@+id/pot3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:textColor="#ff0000"
+        android:text="화분3"/>
+        
+    <Button android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="BACK" />  
+
+</LinearLayout>
