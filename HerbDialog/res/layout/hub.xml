@@ -2,30 +2,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical" >
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/pot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:src="@drawable/hc_1" />
+
+        <ImageButton
+            android:id="@+id/pot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:src="@drawable/hc_2" />
+
+        <ImageButton
+            android:id="@+id/pot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:src="@drawable/hc_3" />
+    </LinearLayout>
+
     <Button
-        android:id="@+id/pot1"
-        android:layout_width="fill_parent"
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="화분1"
-        android:textColor="#ff00ff" />
-        
-    <Button android:id="@+id/pot2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff000"
-        android:text="화분2"/>
-        
-    <Button android:id="@+id/pot3"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-         android:textColor="#ff0000"
-        android:text="화분3"/>
-        
-    <Button android:id="@+id/back"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="BACK" />  
+        android:text="cancel" />
 
 </LinearLayout>

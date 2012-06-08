@@ -19,8 +19,6 @@
         </activity>
         <activity
             android:name=".Dialog"/>
-        <activity
-            android:name=".Dia2"/>
-    </application>
+     </application>
 
 </manifest>
