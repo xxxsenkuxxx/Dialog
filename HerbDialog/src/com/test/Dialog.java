@@ -1,18 +1,27 @@
 package com.test;
 
+import android.R.style;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Dialog extends Activity {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+	protected void onApplyThemeResource(Resources.Theme theme, int resid, boolean first) {
+		super.onApplyThemeResource(theme,resid,first);
 		setContentView(R.layout.hub);
+		
+		theme.applyStyle(style.Theme_Panel,true);
+		getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+		//테두리없애기
 
 		Button potButton = (Button) findViewById(R.id.back);
 		potButton.setOnClickListener(new View.OnClickListener() {

@@ -3,5 +3,6 @@
 
     <string name="hello">Hello World, HerbDialog!</string>
     <string name="app_name">HerbDialog</string>
+    <string name="herb_choice">허브 고르기</string>
 
 </resources>

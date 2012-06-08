@@ -19,7 +19,7 @@ public class HerbDialog extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        txt = (TextView)findViewById(R.id.herb_text);
+        txt = (TextView)findViewById(R.id.choice);
         txt.setText("Hello!");
         
 //        Button btn2 = (Button)findViewById(R.id.h_btn2);

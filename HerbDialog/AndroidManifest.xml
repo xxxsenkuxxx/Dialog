@@ -17,8 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Dialog"/>
+        <activity android:theme="@android:style/Theme.Dialog"
+            android:name=".Dialog"
+            android:label="@string/herb_choice"/>
      </application>
 
 </manifest>
