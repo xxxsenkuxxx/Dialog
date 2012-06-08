@@ -35,7 +35,7 @@ public class Dialog extends Activity {
 		pot1.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
-				int potKind = 11;
+				int potKind = R.drawable.hc_1;
 				Intent intent = new Intent();
 				intent.putExtra("potKind", potKind);
 				setResult(RESULT_OK, intent);
@@ -47,7 +47,7 @@ public class Dialog extends Activity {
 		pot2.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
-				int potKind = 222;
+				int potKind = R.drawable.hc_2;
 				Intent intent = new Intent();
 				intent.putExtra("potKind", potKind);
 				setResult(RESULT_OK, intent);
@@ -59,7 +59,7 @@ public class Dialog extends Activity {
 		pot3.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
-				int potKind = 333;
+				int potKind = R.drawable.hc_3;
 				Intent intent = new Intent();
 				intent.putExtra("potKind", potKind);
 				setResult(RESULT_OK, intent);

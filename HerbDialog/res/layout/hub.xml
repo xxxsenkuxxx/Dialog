@@ -37,10 +37,10 @@
             android:src="@drawable/hc_3" />
     </LinearLayout>
 
-    <Button
+    <ImageButton
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="cancel" />
+        android:src="@drawable/ic_launcher" />
 
 </LinearLayout>

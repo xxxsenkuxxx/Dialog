@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class HerbDialog extends Activity implements View.OnClickListener {
 	
 	private static final String TAG = HerbDialog.class.getSimpleName();
-	private TextView txt;
+	private ImageButton img_btn;
 	
     /** Called when the activity is first created. */
     @Override
@@ -19,8 +21,8 @@ public class HerbDialog extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        txt = (TextView)findViewById(R.id.choice);
-        txt.setText("Hello!");
+        img_btn = (ImageButton)findViewById(R.id.choice);
+        img_btn.setBackgroundResource(R.drawable.ic_launcher);
         
 //        Button btn2 = (Button)findViewById(R.id.h_btn2);
 //        btn2.setOnClickListener(new View.OnClickListener() {
@@ -29,8 +31,8 @@ public class HerbDialog extends Activity implements View.OnClickListener {
 //				startActivityForResult(herb, 20);
 //			}
 //		});
-        Button btn = (Button)findViewById(R.id.choice);
-        btn.setOnClickListener(this);
+        img_btn = (ImageButton)findViewById(R.id.choice);
+        img_btn.setOnClickListener(this);
     }
     
     public void onClick(View v) {
@@ -49,7 +51,7 @@ public class HerbDialog extends Activity implements View.OnClickListener {
 		if (resultCode == RESULT_OK) {
 			if (requestCode == 10) {
 				int potKind = data.getIntExtra("potKind", 0);
-		        txt.setText("" + potKind);
+		        img_btn.setBackgroundResource(potKind);
 //				Log.e(TAG, "["+potKind+"]");
 			}
 		} else {
